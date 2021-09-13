@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 46px;
+    padding-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;    
+}
+
+.celular-lateral {
+    display: flex;    
+    justify-content: center;
+    width: 50%;
+}
+
+.celular-lateral img {
+    height: 40rem;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem; 
+}
+
+input {
+    padding: 5px
+}
+
+input:focus {
+    background-color: rgb(155, 196, 196);    
+}
+
+.user {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    padding: 10px 5px 20px;
+    background-color: #ffffff;
+    width: 100%;     
+    border: 1px solid #0000004b;   
+    max-width: 400px;
+}
+
+.user .button {
+    width: 250px;
+    background: #5a7ecc;
+    color: #ffffff;
+}
+
+.new-user {   
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;    
+    border: 1px solid #0000004b;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.get-the-app .download-buttons img {
+    margin-top: 10px;
+    width: 140px;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }    
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .celular-lateral {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+    
+    .user {
+        border: 1px solid transparent;
+    }
+
+    .new-user {
+        border: 1px solid transparent;
+    }
+}
